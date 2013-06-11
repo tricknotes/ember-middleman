@@ -2,6 +2,8 @@
 
 ember-middleman supports using Ember.js with Middleman in easily.
 
+_This gem is inspired by [ember-rails](http://github.com/emberjs/ember-rails)._
+
 ## Installation
 
 Add this line to your application's Gemfile:
