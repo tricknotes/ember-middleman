@@ -1,3 +1,5 @@
+require 'middleman-core'
+
 require 'ember/middleman/version'
 
 module Ember

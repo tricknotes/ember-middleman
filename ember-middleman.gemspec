@@ -24,6 +24,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'handlebars-source', ['>= 1.0.0.rc2']
   spec.add_dependency 'middleman-core', ['~> 3.0']
   spec.add_dependency 'middleman-more', ['~> 3.0']
+  spec.add_dependency 'middleman-sprockets', ['~> 3.0']
 
   spec.add_development_dependency 'bundler', '~> 1.3'
   spec.add_development_dependency 'rake'
