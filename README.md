@@ -63,6 +63,12 @@ For example:
 
 It automatically set as `Ember.TEMPLATES['ok_button']`.
 
+## Tests
+
+``` sh
+bundle exec rake
+```
+
 ## Known issues
 
 * Many code are duplicated with ember-rails
