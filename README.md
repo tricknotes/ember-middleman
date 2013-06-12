@@ -15,7 +15,6 @@ Add this line to your application's Gemfile:
 ``` ruby
 gem 'ember-middleman'
 gem 'ember-source', '1.0.0.rc5' # the version you requires
-gem 'handlebars-source', '1.0.0.rc4' # the version you requires
 ```
 
 Execute:
