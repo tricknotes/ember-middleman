@@ -1,5 +1,7 @@
 # Ember::Middleman
 
+[![Build Status](https://travis-ci.org/tricknotes/ember-middleman.png?branch=travis)](https://travis-ci.org/tricknotes/ember-middleman)
+
 ember-middleman supports using Ember.js with Middleman in easily.
 
 _This gem is inspired by [ember-rails](http://github.com/emberjs/ember-rails)._
