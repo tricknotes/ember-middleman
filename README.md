@@ -4,6 +4,8 @@
 
 ember-middleman supports using Ember.js with Middleman in easily.
 
+You can use this with [hamlbars](https://github.com/jamesotron/hamlbars) if you like.
+
 _This gem is inspired by [ember-rails](http://github.com/emberjs/ember-rails)._
 
 ## Installation
@@ -28,7 +30,7 @@ Or install it yourself as:
 $ gem install ember-middleman
 ```
 
-## Usage
+## Features
 
 When you installed ember-middleman, the following features help you.
 
