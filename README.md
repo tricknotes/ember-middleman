@@ -1,6 +1,6 @@
 # Ember::Middleman
 
-[![Build Status](https://travis-ci.org/tricknotes/ember-middleman.png?branch=travis)](https://travis-ci.org/tricknotes/ember-middleman)
+[![Build Status](https://travis-ci.org/tricknotes/ember-middleman.png?branch=master)](https://travis-ci.org/tricknotes/ember-middleman)
 
 ember-middleman supports using Ember.js with Middleman in easily.
 
