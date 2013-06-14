@@ -4,7 +4,6 @@
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/tricknotes/ember-middleman/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
 ember-middleman supports using Ember.js with Middleman in easily.
-
 You can use this with [hamlbars](https://github.com/jamesotron/hamlbars) if you like.
 
 _This gem is inspired by [ember-rails](http://github.com/emberjs/ember-rails)._
@@ -77,3 +76,7 @@ bundle exec rake
 
 * Many code are duplicated with ember-rails
 * generator is required
+
+## Example Repository
+
+* [sapporojs.org](https://github.com/sapporojs/sapporojs.org)
