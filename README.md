@@ -1,6 +1,7 @@
 # Ember::Middleman
 
 [![Build Status](https://travis-ci.org/tricknotes/ember-middleman.png?branch=master)](https://travis-ci.org/tricknotes/ember-middleman)
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/tricknotes/ember-middleman/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
 ember-middleman supports using Ember.js with Middleman in easily.
 
