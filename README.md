@@ -29,6 +29,12 @@ Or install it yourself as:
 $ gem install ember-middleman
 ```
 
+And insert the following line to your `config.rb`:
+
+``` ruby
+activate :ember
+```
+
 ## Features
 
 When you installed ember-middleman, the following features help you.
