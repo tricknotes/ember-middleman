@@ -1,0 +1,6 @@
+source 'https://rubygems.org'
+
+gem 'middleman', '~> <%= Middleman::VERSION %>'
+gem 'ember-middleman', '~> <%= Ember::Middleman::VERSION %>'
+
+gem 'ember-source', '1.0.0.rc5'

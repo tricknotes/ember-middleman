@@ -1,6 +1,7 @@
 require 'middleman-core'
 
 require 'ember/middleman/version'
+require 'ember/middleman/templates'
 
 module Ember
   module Middleman

@@ -66,6 +66,23 @@ For example:
 
 It automatically set as `Ember.TEMPLATES['ok_button']`.
 
+### Generator
+
+You can generate a fresh project already setup for ember:
+
+``` ruby
+# Gemfile
+
+source 'https://rubygems.org'
+
+gem 'middleman'
+gem 'ember-middleman'
+```
+
+``` sh
+$ bundle exec middleman init . --template=ember
+```
+
 ## Tests
 
 ``` sh

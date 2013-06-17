@@ -1,0 +1,48 @@
+###
+# Ember settings
+###
+
+activate :ember
+
+# Methods defined in the helpers block are available in templates
+# helpers do
+#   def some_helper
+#     "Helping"
+#   end
+# end
+
+<% if options[:css_dir] -%>
+set :css_dir, '<%= options[:css_dir] -%>'
+<% else -%>
+# Change the CSS directory
+# set :css_dir, "alternative_css_directory"
+<% end -%>
+
+<% if options[:js_dir] -%>
+set :js_dir, '<%= options[:js_dir] -%>'
+<% else -%>
+# Change the JS directory
+# set :js_dir, "alternative_js_directory"
+<% end -%>
+
+<% if options[:images_dir] -%>
+set :images_dir, '<%= options[:images_dir] -%>'
+<% else -%>
+# Change the images directory
+# set :images_dir, "alternative_image_directory"
+<% end -%>
+
+# Build-specific configuration
+configure :build do
+  # For example, change the Compass output style for deployment
+  # activate :minify_css
+
+  # Minify Javascript on build
+  # activate :minify_javascript
+
+  # Use relative URLs-
+  # activate :relative_assets-
+
+  # Enable cache buster
+  # activate :asset_hash
+end
