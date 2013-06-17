@@ -94,7 +94,6 @@ bundle exec rake
 ## Known issues
 
 * Many code are duplicated with ember-rails
-* generator is required
 
 ## Example Repository
 
