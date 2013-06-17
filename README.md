@@ -38,6 +38,8 @@ When you installed ember-middleman, the following features help you.
 You can use Ember.js, handlebars and ember-data.
 Please write the followings to your `application.js` (or something you use):
 
+_You should require jQuery before require ember_.
+
 ``` javascript
 //= require handlebars
 //= require ember
