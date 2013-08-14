@@ -28,6 +28,6 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency 'bundler', '~> 1.3'
   spec.add_development_dependency 'rake'
-  spec.add_development_dependency 'ember-source', '~> 1.0.0.rc6.4'
+  spec.add_development_dependency 'ember-source', '~> 1.0.0.rc7'
   spec.add_development_dependency 'ember-data-source', '>= 0.13'
 end
