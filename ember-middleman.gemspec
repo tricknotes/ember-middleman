@@ -22,8 +22,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'ember-source'
   spec.add_dependency 'ember-data-source', '>= 1.0.0.beta3'
   spec.add_dependency 'sass'
-  spec.add_dependency 'middleman-core', ['~> 3.0']
-  spec.add_dependency 'middleman-more', ['~> 3.0']
+  spec.add_dependency 'middleman', ['~> 3.0']
   spec.add_dependency 'middleman-sprockets', ['~> 3.0']
 
   spec.add_development_dependency 'aruba'
