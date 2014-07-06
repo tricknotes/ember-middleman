@@ -8,9 +8,7 @@ module Ember
   module Middleman
     module Handlebars
       class Template < Tilt::Template
-        def self.default_mime_type
-          'application/javascript'
-        end
+        self.default_mime_type = 'application/javascript'
 
         def self.configuration
           @configuration ||= OpenStruct.new
@@ -47,6 +45,10 @@ module Ember
 
         def configuration
           self.class.configuration
+        end
+
+        def allows_script?
+          false
         end
 
         private

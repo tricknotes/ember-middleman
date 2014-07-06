@@ -20,18 +20,24 @@ module Ember
           yield config if block_given?
 
           app.before_configuration do
-            template_extensions :handlebars => :javascript
+            template_extensions handlebars: :js,
+                                hbs: :js,
+                                hjs: :js
           end
 
           app.after_configuration do
             sprockets.append_path ::Ember::Source.bundled_path_for(nil)
             sprockets.append_path ::Ember::Data::Source.bundled_path_for(nil)
             sprockets.append_path File.dirname(::Handlebars::Source.bundled_path)
+
+            sprockets.register_engine '.handlebars', Ember::Middleman::Handlebars::Template
+            sprockets.register_engine '.hbs', Ember::Middleman::Handlebars::Template
+            sprockets.register_engine '.hjs', Ember::Middleman::Handlebars::Template
           end
 
-          Sprockets.register_engine '.handlebars', Ember::Middleman::Handlebars::Template
-          Sprockets.register_engine '.hbs', Ember::Middleman::Handlebars::Template
-          Sprockets.register_engine '.hjs', Ember::Middleman::Handlebars::Template
+          ::Tilt.register '.handlebars', Ember::Middleman::Handlebars::Template
+          ::Tilt.register '.hbs', Ember::Middleman::Handlebars::Template
+          ::Tilt.register '.hjs', Ember::Middleman::Handlebars::Template
         end
       end
     end
