@@ -14,7 +14,7 @@ Add this line to your application's Gemfile:
 
 ``` ruby
 gem 'ember-middleman'
-gem 'ember-source', '1.5.1' # Specify the version you want to use
+gem 'ember-source', '1.6.0' # Specify the version you want to use
 ```
 
 Execute:
