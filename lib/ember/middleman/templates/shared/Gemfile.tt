@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
+source 'https://rails-assets.org'
 
 gem 'middleman', '~> <%= Middleman::VERSION %>'
 gem 'ember-middleman', '~> <%= Ember::Middleman::VERSION %>'
 
+gem 'rails-assets-jquery'
 gem 'ember-source', '1.8.0'
