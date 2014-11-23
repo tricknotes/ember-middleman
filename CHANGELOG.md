@@ -1,5 +1,9 @@
 # Ember::Middleman Changelog
 
+## [v0.0.7](https://github.com/tricknotes/ember-middleman/tree/v0.0.7)
+
+* Fix generator template
+
 ## [v0.0.6](https://github.com/tricknotes/ember-middleman/tree/v0.0.6)
 
 * Update generator to use [rails-assets.org][]
