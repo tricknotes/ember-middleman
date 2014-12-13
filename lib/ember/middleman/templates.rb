@@ -35,6 +35,14 @@ module Ember
         empty_directory File.join(js_dir, 'views')
         empty_directory File.join(js_dir, 'templates')
         empty_directory File.join(js_dir, 'routes')
+
+        %w(
+          source/layouts/layout.html.erb
+          source/index.html.erb
+          source/javascripts/templates/index.js.handlebars
+        ).each do |file|
+          copy_file file, File.join(location, file)
+        end
       end
     end
   end
