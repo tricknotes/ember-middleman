@@ -1,5 +1,9 @@
 # Ember::Middleman Changelog
 
+## [v0.0.9](https://github.com/tricknotes/ember-middleman/tree/v0.0.9)
+
+* Add index page for generator
+
 ## [v0.0.8](https://github.com/tricknotes/ember-middleman/tree/v0.0.8)
 
 * Update generator ember-source version to 1.9.0
