@@ -1,5 +1,9 @@
 # Ember::Middleman Changelog
 
+## [v0.0.8](https://github.com/tricknotes/ember-middleman/tree/v0.0.8)
+
+* Update generator ember-source version to 1.9.0
+
 ## [v0.0.7](https://github.com/tricknotes/ember-middleman/tree/v0.0.7)
 
 * Fix generator template
