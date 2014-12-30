@@ -29,10 +29,12 @@ module Ember
 
         directory File.join('source', 'javascripts'), js_dir
 
+        empty_directory File.join(js_dir, 'initializers')
         empty_directory File.join(js_dir, 'models')
         empty_directory File.join(js_dir, 'controllers')
         empty_directory File.join(js_dir, 'helpers')
         empty_directory File.join(js_dir, 'views')
+        empty_directory File.join(js_dir, 'components')
         empty_directory File.join(js_dir, 'templates')
         empty_directory File.join(js_dir, 'routes')
 
