@@ -29,14 +29,19 @@ module Ember
 
         directory File.join('source', 'javascripts'), js_dir
 
-        empty_directory File.join(js_dir, 'initializers')
-        empty_directory File.join(js_dir, 'models')
-        empty_directory File.join(js_dir, 'controllers')
-        empty_directory File.join(js_dir, 'helpers')
-        empty_directory File.join(js_dir, 'views')
-        empty_directory File.join(js_dir, 'components')
-        empty_directory File.join(js_dir, 'templates')
-        empty_directory File.join(js_dir, 'routes')
+        %w(
+          initializers
+          models
+          controllers
+          helpers
+          views
+          components
+          templates
+          routes
+        ).each do |type|
+          empty_directory File.join(js_dir, type)
+          copy_file 'gitkeep', File.join(js_dir, type, '.gitkeep')
+        end
 
         %w(
           source/layouts/layout.html.erb
