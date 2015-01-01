@@ -1,5 +1,9 @@
 # Ember::Middleman Changelog
 
+## [v0.0.10](https://github.com/tricknotes/ember-middleman/tree/v0.0.10)
+
+* Create `.gitkeep` for empty dir
+
 ## [v0.0.9](https://github.com/tricknotes/ember-middleman/tree/v0.0.9)
 
 * Add index page for generator
