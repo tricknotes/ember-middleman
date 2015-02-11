@@ -1,5 +1,9 @@
 # Ember::Middleman Changelog
 
+## [v0.0.12](https://github.com/tricknotes/ember-middleman/tree/v0.0.12)
+
+* Specify handlebars-source version < 3
+
 ## [v0.0.11](https://github.com/tricknotes/ember-middleman/tree/v0.0.11)
 
 * Update generator ember-source version to 1.10.0
