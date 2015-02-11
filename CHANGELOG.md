@@ -1,6 +1,6 @@
 # Ember::Middleman Changelog
 
-## Not yet released
+## [v0.0.11](https://github.com/tricknotes/ember-middleman/tree/v0.0.11)
 
 * Update generator ember-source version to 1.10.0
 * Update generator following Ember.js 1.10.0
