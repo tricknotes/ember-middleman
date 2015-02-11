@@ -20,6 +20,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'barber', '~> 0.6.0'
   spec.add_dependency 'ember-source'
+  spec.add_dependency 'handlebars-source', '< 3' # workaround for barber issue: https://github.com/tchak/barber/pull/33
   spec.add_dependency 'ember-data-source', '>= 1.0.0.beta3'
   spec.add_dependency 'sass'
   spec.add_dependency 'middleman', ['~> 3.0']
