@@ -4,7 +4,6 @@ require 'ember/middleman/handlebars/template'
 
 require 'ember/source'
 require 'ember/data/source'
-require 'handlebars/source'
 
 module Ember
   module Middleman
@@ -28,7 +27,7 @@ module Ember
           app.after_configuration do
             sprockets.append_path ::Ember::Source.bundled_path_for(nil)
             sprockets.append_path ::Ember::Data::Source.bundled_path_for(nil)
-            sprockets.append_path File.dirname(::Handlebars::Source.bundled_path)
+            sprockets.append_path File.dirname(::Handlebars::Source.bundled_path) if defined?(::Handlebars)
 
             sprockets.register_engine '.handlebars', Ember::Middleman::Handlebars::Template
             sprockets.register_engine '.hbs', Ember::Middleman::Handlebars::Template

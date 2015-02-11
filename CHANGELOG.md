@@ -1,5 +1,10 @@
 # Ember::Middleman Changelog
 
+## Not yet released
+
+* Update generator ember-source version to 1.10.0
+* Update generator following Ember.js 1.10.0
+
 ## [v0.0.10](https://github.com/tricknotes/ember-middleman/tree/v0.0.10)
 
 * Create `.gitkeep` for empty dir

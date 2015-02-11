@@ -46,7 +46,7 @@ module Ember
         %w(
           source/layouts/layout.html.erb
           source/index.html.erb
-          source/javascripts/templates/index.js.handlebars
+          source/javascripts/templates/index.js.hbs
         ).each do |file|
           copy_file file, File.join(location, file)
         end

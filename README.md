@@ -14,7 +14,7 @@ Add this line to your application's Gemfile:
 
 ``` ruby
 gem 'ember-middleman'
-gem 'ember-source', '1.8.0' # Specify the version you want to use
+gem 'ember-source' # You can specify the version you want to use
 ```
 
 Execute:
@@ -41,20 +41,19 @@ When you installed ember-middleman, the following features help you.
 
 ### Path to libraries
 
-You can use Ember.js, handlebars and ember-data.
+You can use Ember.js and ember-data.
 Please write the followings to your `application.js` (or something you use):
 
 _You should require jQuery before require ember_.
 
 ``` javascript
-//= require handlebars
 //= require ember
 //= require ember-data
 ```
 
-### handlebars compilation
+### HTMLBars precompilation
 
-You can use handlebars as your template language for Ember.js.
+You can use HTMLBars as your template language for Ember.js.
 
 ``` sh
 $ mkdir -p source/javascripts/templates
@@ -64,15 +63,17 @@ And put your template.
 
 For example:
 
-* `source/javascripts/templates/ok_button.js.handlebars`
+* `source/javascripts/templates/ok_button.js.hbs`
 
-``` handlebars
+``` hbs
 <div>
   <button {{action someAction}}>OK</button>
 </div>
 ```
 
 It automatically set as `Ember.TEMPLATES['ok_button']`.
+
+**Without precompilation, `ember-template-compiler.js` is required for client side compilation.**
 
 ### Generator
 
