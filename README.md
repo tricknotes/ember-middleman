@@ -67,7 +67,7 @@ For example:
 
 ``` hbs
 <div>
-  <button {{action someAction}}>OK</button>
+  <button {{action "someAction"}}>OK</button>
 </div>
 ```
 
