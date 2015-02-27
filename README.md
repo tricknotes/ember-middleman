@@ -98,6 +98,14 @@ $ bundle exec middleman init . --template=ember
 bundle exec rake
 ```
 
+### Use Handlebars (using Ember.js < 1.10)
+
+When you use Ember.js < 1.10, `handlebars` is required in your `application.js`.
+
+``` js
+//= require handlebars
+```
+
 ## Known issues
 
 * Many code are duplicated with ember-rails
