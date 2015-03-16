@@ -1,5 +1,9 @@
 # Ember::Middleman Changelog
 
+## [v0.0.14](https://github.com/tricknotes/ember-middleman/tree/v0.0.14)
+
+* Ember < 1.10.0 support is back (handlebars related features are optional)
+
 ## [v0.0.13](https://github.com/tricknotes/ember-middleman/tree/v0.0.13)
 
 * Drop Ember < 1.10.0 support (It depends on handlebars-source)
