@@ -63,7 +63,7 @@ And put your template.
 
 For example:
 
-* `source/javascripts/templates/ok_button.js.hbs`
+* `source/javascripts/templates/ok-button.js.hbs`
 
 ``` hbs
 <div>
@@ -71,7 +71,7 @@ For example:
 </div>
 ```
 
-It automatically set as `Ember.TEMPLATES['ok_button']`.
+It automatically set as `Ember.TEMPLATES['ok-button']`.
 
 **Without precompilation, `ember-template-compiler.js` is required for client side compilation.**
 
