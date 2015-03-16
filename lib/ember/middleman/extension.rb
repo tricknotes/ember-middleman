@@ -5,6 +5,12 @@ require 'ember/middleman/handlebars/template'
 require 'ember/source'
 require 'ember/data/source'
 
+begin
+  require 'handlebars/source'
+rescue LoadError => e
+  raise e unless e.message == 'cannot load such file -- handlebars/source'
+end
+
 module Ember
   module Middleman
     module Extension

@@ -19,8 +19,8 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_dependency 'barber', '~> 0.7.0'
-  spec.add_dependency 'ember-source', '>= 1.10.0'
-  spec.add_dependency 'ember-data-source', '>= 1.0.0.beta.15'
+  spec.add_dependency 'ember-source'
+  spec.add_dependency 'ember-data-source', '>= 1.0.0.beta.8'
   spec.add_dependency 'sass'
   spec.add_dependency 'middleman', ['~> 3.0']
   spec.add_dependency 'middleman-sprockets', ['~> 3.0']
