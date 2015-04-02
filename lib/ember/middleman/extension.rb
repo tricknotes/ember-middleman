@@ -1,6 +1,6 @@
 require 'active_support/ordered_options'
 
-require 'ember/middleman/handlebars/template'
+require 'ember/handlebars/template'
 
 require 'ember/source'
 require 'ember/data/source'
@@ -16,13 +16,13 @@ module Ember
     module Extension
       class << self
         def registered(app)
-          config = Ember::Middleman::Handlebars::Template.configuration
+          Ember::Handlebars::Template.configure do |config|
+            config.precompile = true
+            config.templates_root = 'templates'
+            config.templates_path_separator = '/'
 
-          config.precompile ||= true
-          config.templates_root ||= 'templates'
-          config.templates_path_separator ||= '/'
-
-          yield config if block_given?
+            yield config if block_given?
+          end
 
           app.before_configuration do
             template_extensions handlebars: :js,
@@ -35,14 +35,14 @@ module Ember
             sprockets.append_path ::Ember::Data::Source.bundled_path_for(nil)
             sprockets.append_path File.dirname(::Handlebars::Source.bundled_path) if defined?(::Handlebars)
 
-            sprockets.register_engine '.handlebars', Ember::Middleman::Handlebars::Template
-            sprockets.register_engine '.hbs', Ember::Middleman::Handlebars::Template
-            sprockets.register_engine '.hjs', Ember::Middleman::Handlebars::Template
+            sprockets.register_engine '.handlebars', Ember::Handlebars::Template
+            sprockets.register_engine '.hbs', Ember::Handlebars::Template
+            sprockets.register_engine '.hjs', Ember::Handlebars::Template
           end
 
-          ::Tilt.register '.handlebars', Ember::Middleman::Handlebars::Template
-          ::Tilt.register '.hbs', Ember::Middleman::Handlebars::Template
-          ::Tilt.register '.hjs', Ember::Middleman::Handlebars::Template
+          ::Tilt.register '.handlebars', Ember::Handlebars::Template
+          ::Tilt.register '.hbs', Ember::Handlebars::Template
+          ::Tilt.register '.hjs', Ember::Handlebars::Template
         end
       end
     end

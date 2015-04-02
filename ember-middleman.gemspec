@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'barber', '~> 0.7.0'
+  spec.add_dependency 'ember-handlebars-template', '~> 0.1.2'
   spec.add_dependency 'ember-source'
   spec.add_dependency 'ember-data-source', '>= 1.0.0.beta.8'
   spec.add_dependency 'sass'

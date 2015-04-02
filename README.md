@@ -106,10 +106,6 @@ When you use Ember.js < 1.10, `handlebars` is required in your `application.js`.
 //= require handlebars
 ```
 
-## Known issues
-
-* Many code are duplicated with ember-rails
-
 ## Example Repository
 
 * [sapporojs.org](https://github.com/sapporojs/sapporojs.org)
