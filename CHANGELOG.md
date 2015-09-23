@@ -1,5 +1,9 @@
 # Ember::Middleman Changelog
 
+## [v0.0.16](https://github.com/tricknotes/ember-middleman/tree/v0.0.16)
+
+* Allow [ember-handlebars-template][] ~> 0.1.
+
 ## [v0.0.15](https://github.com/tricknotes/ember-middleman/tree/v0.0.15)
 
 * Use [ember-handlebars-template][] instead of barber.
