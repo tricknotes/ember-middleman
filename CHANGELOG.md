@@ -1,5 +1,9 @@
 # Ember::Middleman Changelog
 
+## [v0.0.17](https://github.com/tricknotes/ember-middleman/tree/v0.0.17)
+
+* Remove version specification from ember-data-source
+
 ## [v0.0.16](https://github.com/tricknotes/ember-middleman/tree/v0.0.16)
 
 * Allow [ember-handlebars-template][] ~> 0.1.
