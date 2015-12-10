@@ -14,3 +14,4 @@ env:
     - EMBER_VERSION="~> 1.13.0"
     - EMBER_VERSION="~> 2.0.0"
     - EMBER_VERSION="~> 2.1.0"
+    - EMBER_VERSION="~> 2.2.0"
