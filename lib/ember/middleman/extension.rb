@@ -5,12 +5,6 @@ require 'ember/handlebars/template'
 require 'ember/source'
 require 'ember/data/source'
 
-begin
-  require 'handlebars/source'
-rescue LoadError => e
-  raise e unless e.message == 'cannot load such file -- handlebars/source'
-end
-
 module Ember
   module Middleman
     module Extension
@@ -33,7 +27,7 @@ module Ember
           app.after_configuration do
             sprockets.append_path ::Ember::Source.bundled_path_for(nil)
             sprockets.append_path ::Ember::Data::Source.bundled_path_for(nil)
-            sprockets.append_path File.dirname(::Handlebars::Source.bundled_path) if defined?(::Handlebars)
+            sprockets.append_path File.dirname(::Handlebars::Source.bundled_path) if Ember::Handlebars::Template.handlebars_available?
 
             sprockets.register_engine '.handlebars', Ember::Handlebars::Template
             sprockets.register_engine '.hbs', Ember::Handlebars::Template
