@@ -1,5 +1,9 @@
 # Ember::Middleman Changelog
 
+## [v0.0.18](https://github.com/tricknotes/ember-middleman/tree/v0.0.18)
+
+* Bump ember-handlebars-template version to cleanup internal API
+
 ## [v0.0.17](https://github.com/tricknotes/ember-middleman/tree/v0.0.17)
 
 * Remove version specification from ember-data-source
